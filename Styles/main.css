@@ -1,0 +1,347 @@
+:root {
+    --red: #ec3037;
+    --green: #3c9612;
+    --aqua: #35eee8;
+}
+
+nav {
+    float: left;
+}
+
+#mine {
+    position: static;
+    left: 0rem;
+    top: 0rem;
+    margin: 0;
+    width: 20%;
+    display: inline-block;
+    /* border: solid; */
+}
+.svg {
+    width: 20%;
+    float: right;
+    margin-right: 2%;
+}
+
+article,p {
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    font-weight: 1;
+    color: var(--green);
+    font-size: 3rem;
+    display: inline-block;
+}
+
+h1.head {
+    position: absolute;
+    top: 2.3rem;
+    left: 15rem;
+    margin: 0;
+    font-size: 5rem;
+}
+
+h2 {
+    font-family: 'Lobster', cursive;
+    font-weight: lighter;
+    color: var(--red);
+    font-size: 1.8rem;
+    margin-bottom: 1.7rem;
+}
+
+h3, h4 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--green);
+    font-size: 2rem;
+} 
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(240, 248, 225);
+    line-height: 1.5rem;
+}
+
+main {
+    margin: 0 auto;
+    padding: 0 1rem;
+    max-width: 70rem;
+    /* border: solid; */
+}
+
+figure {
+    margin: 0 auto;
+    max-width: 37.5rem;
+}
+
+a:link {
+    color: var(--aqua);
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+}
+a:visited {
+    color: var(--aqua);
+}
+a:hover {
+    color: var(--green);
+    font-weight: bolder;
+    cursor: pointer;
+}
+a:active {
+    color: var(--red);
+}
+nav ul {
+    color: var(--aqua);
+}
+
+a.button{
+    font-weight: bolder;
+}
+.button {
+    align-items: center;
+    justify-content: space-between;
+    display: inline-block;
+    margin: 2rem 2rem;
+    border: 0.2rem solid var(--aqua);
+    font-size: 0.9rem;
+    padding: 1.1rem 4rem;
+    text-transform: uppercase;
+    transition: background-color 0.6s ease-out, color 0.6s ease-out, letter-spacing 0.6s ease-out, padding 0.6s ease-out;
+}
+.button:hover {
+    background: var(--aqua);
+    color: #222;
+    letter-spacing: 0.7rem;
+    padding: 1.1rem 1.6rem;
+    cursor: pointer;
+    transition: background-color 0.6s ease-in, color 0.6s ease-in, letter-spacing 0.6s ease-in, padding 0.6s ease-in;
+}
+
+figcaption {
+    float: right;
+    position: relative;
+    font-style: italic;
+    margin-top: -2.2rem;
+    margin-right: 1rem;
+    color: #fff;
+}
+
+footer p {
+    margin-left: 1rem;
+    font-size: 0.8rem;
+}
+
+.hero {
+    position: relative;  
+}
+
+.hero .text-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    letter-spacing: 2px;
+    color: var(--aqua);
+    
+    background-color: rgba(0,0,0,0.6);
+    background: linear-gradient(to top, rgba(0,0,0,1), transparent);
+}
+
+.hero h1 {
+    margin: 48rem 2rem 0rem 2rem;
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 0.3rem 2rem 1rem 2rem;
+}
+
+.image-wrapper img {
+    display: block;
+    width: 400px;
+    height: 400px;
+}
+
+/* .cards {
+    display: flex;
+} */
+
+.image-wrapper {
+    overflow: hidden;
+}
+
+.card img {
+    width: 400px;
+    max-height: 400px;
+    transition: transform 300ms, filter 200ms;
+    display: block;
+}
+  
+.card {
+    margin: 1rem 1rem 1rem 1rem;
+    display: inline-block;
+    overflow: hidden;
+}
+  
+.card p {
+    position: relative;
+    bottom: 24rem;
+    left: 1rem;
+    margin: 0;
+    color: var(--green);
+    font-weight: bolder;
+    letter-spacing: 0.3rem;
+    font-size: 1.5rem;
+}
+
+.overlay {
+    position: relative;
+    left: 5rem;
+    bottom: 13rem;
+    margin: 0;
+    color: whitesmoke;
+    opacity: 0;
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    transition: opacity 500ms;
+}
+
+.card:hover img {
+    overflow: hidden;
+    transform: scale(1.2);
+    filter: blur(5px);
+}
+
+.card:hover .overlay {
+   opacity: 100;
+   cursor: pointer;
+}
+
+/* CSS BREAK
+*************
+*************
+*************
+ */
+
+.profile main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    align-items: center;
+}
+
+.profile main > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile main > p {
+    margin-top: -4rem;
+    font-size: 25px;
+}
+
+.loader {
+    padding-top: 6rem;
+}
+
+.turtle {
+    animation: go-around 4s linear forwards infinite;
+    animation-delay: 0.5s;
+}
+.apple {
+    margin-top: -2.7rem;
+    margin-bottom: 1rem;
+    animation: go-around 4s linear forwards infinite;
+}
+
+:root {
+    --0Y: -8rem;
+    --6Y: -7.39rem;
+    --12Y: -5.66rem;
+    --18Y: -3.06rem;
+    --25Y: 0rem;
+    --31Y: 3.06rem;
+    --37Y: 5.66rem;
+    --43Y: 7.39rem;
+    --50Y: 8rem;
+
+    --0X: 0rem;
+    --6X: 3.06rem;
+    --12X: 5.66rem;
+    --18X: 7.39rem;
+    --25X: 8rem;
+    --31X: 7.39rem;
+    --37X: 5.66rem;
+    --43X: 3.06rem;
+    --50X: 0rem;
+    --56X: -3.06rem;
+    --62X: -5.66rem;
+    --68X: -7.39rem;
+    --75X: -8rem;
+    --81X: -7.39rem;
+    --87X: -5.66rem;
+    --93X: -3.06rem;
+    --100X: 0rem;
+}
+
+@keyframes go-around {
+    0% {
+        transform: translatex(var(--0X)) translatey(var(--0Y)) rotatez(0deg);
+    }
+    6.25% {
+        transform: translatex(var(--6X)) translatey(var(--6Y)) rotatez(22.5deg);
+    }
+    12.5% {
+        transform: translatex(var(--12X)) translatey(var(--12Y)) rotatez(45deg);
+    }
+    18.75% {
+        transform: translatex(var(--18X)) translatey(var(--18Y)) rotatez(67.5deg);
+    }
+    25% {
+        transform: translatex(var(--25X)) translatey(var(--25Y)) rotatez(90deg);
+    }
+    31.25% {
+        transform: translatex(var(--31X)) translatey(var(--31Y)) rotatez(112.5deg);
+    }
+    37.5% {
+        transform: translatex(var(--37X)) translatey(var(--37Y)) rotatez(135deg);
+    }
+    43.75% {
+        transform: translatex(var(--43X)) translatey(var(--43Y)) rotatez(157.5deg);
+    }
+    50% {
+        transform: translatex(var(--50X)) translatey(var(--50Y)) rotatez(180deg);
+    }
+    56.25% {
+        transform: translatex(var(--56X)) translatey(var(--43Y)) rotatez(202.5deg);
+    }
+    62.5% {
+        transform: translatex(var(--62X)) translatey(var(--37Y)) rotatez(225deg);
+    }
+    68.75% {
+        transform: translatex(var(--68X)) translatey(var(--31Y)) rotatez(247.5deg);
+    }
+    75% {
+        transform: translatex(var(--75X)) translatey(var(--25Y)) rotatez(270deg);
+    }
+    81.25% {
+        transform: translatex(var(--81X)) translatey(var(--18Y)) rotatez(292.5deg);
+    }
+    87.5% {
+        transform: translatex(var(--87X)) translatey(var(--12Y)) rotatez(315deg);
+    }
+    93.75% {
+        transform: translatex(var(--93X)) translatey(var(--6Y)) rotatez(337.5deg);
+    }
+    100% {
+        transform: translatex(var(--100X)) translatey(var(--0Y)) rotatez(360deg);
+    }
+}
